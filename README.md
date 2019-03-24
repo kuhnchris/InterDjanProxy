@@ -29,3 +29,7 @@ pip install -r requirement.txt
 python3 app/manage.py createsuperuser
 python3 app/manage.py runserver
 ```
+
+!["http://creativecommons.org/licenses/by-sa/4.0/">](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
