@@ -1,6 +1,6 @@
 #!/bin/sh
 HOSTPARAM=$1
-if [ -n "$HOSTPARAM" ]; do
+if [ "$HOSTPARAM" == "" ]; then
 	echo "usage: $0 ALLOWED_HOST"
 	exit
 fi
@@ -8,7 +8,7 @@ fi
 echo "removing DEBUG..."
 sed -i 's/DEBUG = True//' app/app/settings.py
 
-echo "delete old secret key...
+echo "delete old secret key..."
 sed -i '/SECRET_KEY/d' app/app/settings.py
 
 echo "set new SECRET_KEY.... (shhh, it's secret!)"
