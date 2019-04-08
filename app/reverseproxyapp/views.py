@@ -20,7 +20,7 @@ class ReverseProxyView(ProxyView):
                 AttemptedDomainCall.objects.create(domain=domain, path=path).save()
             raise Http404('Not allowed.')
 
-        if entry.filter(https=True).count > 0:
+        if entry.filter(https=True).count() > 0:
             self.upstream = f'https://{domain}'
         else:
             self.upstream = f'http://{domain}'
