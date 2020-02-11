@@ -1,4 +1,4 @@
-Django==2.1.12
+Django==2.2.10
 django-revproxy==0.9.15
 django-widget-tweaks==1.4.3
 pytz==2018.9
